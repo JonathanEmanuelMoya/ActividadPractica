@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad practica Bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/img/codoacodo.png" alt="Logo" width="100" height="80"
+                    class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: white;" ;>La
+                            conferencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Los oradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">El lugar y la fecha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Conviertete en orador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-button" class="nav-link" href="#">Comprar tickets</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="text-img">
+        <img src="/img/ba1.jpg" class="d-block w-90" alt="buenos aires">
+        <h2>Conf Bs As</h2>
+        <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y
+            experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a
+            otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+        <button type="button" class="btn btn-light">Quiero ser orador</button>
+        <button type="button" class="btn btn-success">Comprar tickets</button>
+    </div>
+
+    <p id="text-center">CONOCE A LOS</p>
+    <h2>ORADORES</h2>
+
+    <div id="card-container">
+        <div class="card" style="width: 18rem;">
+            <img src="/img/steve.jpg" class="card-img-top" alt="Steve Jobs">
+            <div class="card-body">
+                <button type="button" class="btn btn-warning">Javascript</button>
+                <button type="button" class="btn btn-primary">React</button>
+                <h5 class="card-title">Steve Jobs</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="/img/bill.jpg" class="card-img-top" alt="Bill Gates">
+            <div class="card-body">
+                <button type="button" class="btn btn-warning">Javascript</button>
+                <button type="button" class="btn btn-primary">React</button>
+                <h5 class="card-title">Bill Gates</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="/img/ada.jpeg" class="card-img-top" alt="Ada Lovelace">
+            <div class="card-body">
+                <button type="button" class="btn btn-secondary">Negocios</button>
+                <button type="button" class="btn btn-danger">Startups</button>
+                <h5 class="card-title">Ada Lovelace</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="img-container">
+        <img src="/img/honolulu.jpg" alt="honolulu">
+        <div class="text-container">
+            <h2>Bs As - Octubre</h2>
+            <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos.
+                Honolulu
+                es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se
+                refiere
+                al área urbana de la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado
+                una
+                ciudad-condado consolidada que cubre toda la ciudad(aproximadamente 600km cuadrados de superficie)</p>
+            <button>Conocé más</button>
+        </div>
+    </div>
+
+    <p id="text-center">CONVIERTETE EN UN</p>
+    <h2>ORADOR</h2>
+    <p style="text-align: center ;">Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+
+    <input type="text" style="width: 25%; margin-left: 25%;" placeholder="Nombre">
+    <input type="text" style="width: 25%; margin-left: 1%;" placeholder="Apellido">
+    <input type="text" style="width: 51.4%; height: 100px; margin-left: 25%; margin-top: 10px; font-size: 30px;"
+        placeholder="Sobre qué quieres hablar?">
+    <p style="margin-left: 25%; font-size: 15px;">Recuerda incluir un titulo para tu charla</p>
+
+    <button type="button" class="btn btn-success"
+        style="width: 51.4%; margin-left: 25%; background: rgb(40, 185, 40);">Enviar</button>
+
+    
+        <div id="footer">
+            <ul class="footer-list">
+                <li class="footer-item"><a>Preguntas frecuentes</a></li>
+                <li class="footer-item"><a>Contáctanos</a></li>
+                <li class="footer-item"><a>Prensa</a></li>
+                <li class="footer-item"><a>Conferencias</a></li>
+                <li class="footer-item"><a>Términos y condiciones</a></li>
+                <li class="footer-item"><a>Privacidad</a></li>
+                <li class="footer-item"><a>Estudiantes</a></li>
+            </ul>
+        </div>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
